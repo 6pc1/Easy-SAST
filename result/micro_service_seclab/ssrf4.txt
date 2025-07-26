@@ -1,0 +1,36 @@
+漏洞类型:java/vul/ssrf
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: imageUrl : String
+代码行数: 64
+代码片段: @RequestParam(value = "url") String imageUrl)
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: imageUrl
+代码行: 67
+代码片段:             HttpGet get = new HttpGet(imageUrl);
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: imageUrl : String
+代码行数: 64
+代码片段:     public String Four(@RequestParam(value = "url") String imageUrl) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: imageUrl
+代码行数: 67
+代码片段:             HttpGet get = new HttpGet(imageUrl);
+
+
+

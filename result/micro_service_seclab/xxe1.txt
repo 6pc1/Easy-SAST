@@ -1,0 +1,85 @@
+漏洞类型:java/vul/xxe
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: xmlStr : String
+代码行数: 16
+代码片段: @RequestParam(value = "xml_str") String xmlStr)
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: stream
+代码行: 19
+代码片段:         org.w3c.dom.Document doc = documentBuilder.parse(stream);
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: xmlStr : String
+代码行数: 16
+代码片段:     public String one(@RequestParam(value = "xml_str") String xmlStr) throws Exception {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: xmlStr : String
+代码行数: 18
+代码片段:         InputStream stream = new ByteArrayInputStream(xmlStr.getBytes("UTF-8"));
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: getBytes(...) : byte[]
+代码行数: 18
+代码片段:         InputStream stream = new ByteArrayInputStream(xmlStr.getBytes("UTF-8"));
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: stream
+代码行数: 19
+代码片段:         org.w3c.dom.Document doc = documentBuilder.parse(stream);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: xmlStr : String
+代码行数: 16
+代码片段:     public String one(@RequestParam(value = "xml_str") String xmlStr) throws Exception {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: xmlStr : String
+代码行数: 18
+代码片段:         InputStream stream = new ByteArrayInputStream(xmlStr.getBytes("UTF-8"));
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: getBytes(...) : byte[]
+代码行数: 18
+代码片段:         InputStream stream = new ByteArrayInputStream(xmlStr.getBytes("UTF-8"));
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: new ByteArrayInputStream(...) : ByteArrayInputStream
+代码行数: 18
+代码片段:         InputStream stream = new ByteArrayInputStream(xmlStr.getBytes("UTF-8"));
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/XXEController.java
+传播参数: stream
+代码行数: 19
+代码片段:         org.w3c.dom.Document doc = documentBuilder.parse(stream);
+
+
+

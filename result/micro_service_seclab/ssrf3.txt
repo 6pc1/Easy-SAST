@@ -1,0 +1,50 @@
+漏洞类型:java/vul/ssrf
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: imageUrl : String
+代码行数: 49
+代码片段: @RequestParam(value = "url") String imageUrl)
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: url
+代码行: 53
+代码片段:             com.squareup.okhttp.Request request = new com.squareup.okhttp.Request.Builder().get().url(url).build();
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: imageUrl : String
+代码行数: 49
+代码片段:     public String Three(@RequestParam(value = "url") String imageUrl) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: imageUrl : String
+代码行数: 51
+代码片段:             URL url = new URL(imageUrl);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: new URL(...) : URL
+代码行数: 51
+代码片段:             URL url = new URL(imageUrl);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java
+传播参数: url
+代码行数: 53
+代码片段:             com.squareup.okhttp.Request request = new com.squareup.okhttp.Request.Builder().get().url(url).build();
+
+
+

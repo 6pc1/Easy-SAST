@@ -1,0 +1,106 @@
+漏洞类型:java/vul/sql
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: optinal_username : Optional
+代码行数: 64
+代码片段: @RequestParam(value = "username") Optional<String> optinal_username)
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sqlWithOptional
+代码行: 49
+代码片段:         return jdbcTemplate.query(sqlWithOptional, ROW_MAPPER);
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: optinal_username : Optional
+代码行数: 64
+代码片段:     public List<Student> optionalLike(@RequestParam(value = "username") Optional<String> optinal_username) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: optinal_username : Optional
+代码行数: 65
+代码片段:         return indexLogic.getStudentWithOptional(optinal_username);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: get(...) : String
+代码行数: 47
+代码片段:         String sqlWithOptional = "select * from students where username like '%" + username.get() + "%'";
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sqlWithOptional
+代码行数: 49
+代码片段:         return jdbcTemplate.query(sqlWithOptional, ROW_MAPPER);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: optinal_username : Optional
+代码行数: 64
+代码片段:     public List<Student> optionalLike(@RequestParam(value = "username") Optional<String> optinal_username) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: optinal_username : Optional
+代码行数: 65
+代码片段:         return indexLogic.getStudentWithOptional(optinal_username);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: username : Optional
+代码行数: 26
+代码片段:     public List<Student> getStudentWithOptional(Optional<String> username) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: username : Optional
+代码行数: 27
+代码片段:         return indexDb.getStudentWithOptional(username);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: username : Optional
+代码行数: 46
+代码片段:     public List<Student> getStudentWithOptional(Optional<String> username) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: username : Optional
+代码行数: 47
+代码片段:         String sqlWithOptional = "select * from students where username like '%" + username.get() + "%'";
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: get(...) : String
+代码行数: 47
+代码片段:         String sqlWithOptional = "select * from students where username like '%" + username.get() + "%'";
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sqlWithOptional
+代码行数: 49
+代码片段:         return jdbcTemplate.query(sqlWithOptional, ROW_MAPPER);
+
+
+

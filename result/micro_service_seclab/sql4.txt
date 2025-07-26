@@ -1,0 +1,127 @@
+漏洞类型:java/vul/sql
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: user : Teacher
+代码行数: 59
+代码片段: @RequestBody Teacher user)
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sqlWithInt
+代码行: 59
+代码片段:         return jdbcTemplate.query(sqlWithInt, ROW_MAPPER_TEACHER);
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: user : Teacher
+代码行数: 59
+代码片段:     public List<Teacher> objectLomBok(@RequestBody Teacher user) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: getName(...) : String
+代码行数: 60
+代码片段:         return indexLogic.getTeacherById(user.getName());
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: userName : String
+代码行数: 38
+代码片段:     public List<Teacher> getTeacherById(String userName) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: userName : String
+代码行数: 39
+代码片段:         return indexDb.getTeacherById(userName);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: userName : String
+代码行数: 57
+代码片段:     public List<Teacher> getTeacherById(String userName) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sqlWithInt
+代码行数: 59
+代码片段:         return jdbcTemplate.query(sqlWithInt, ROW_MAPPER_TEACHER);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: user : Teacher
+代码行数: 59
+代码片段:     public List<Teacher> objectLomBok(@RequestBody Teacher user) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: user : Teacher
+代码行数: 60
+代码片段:         return indexLogic.getTeacherById(user.getName());
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/data/Teacher.java
+传播参数: parameter this : Teacher
+代码行数: 18
+代码片段:     public String getName() {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/data/Teacher.java
+传播参数: this.name : String
+代码行数: 19
+代码片段:         return this.name;
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: getName(...) : String
+代码行数: 60
+代码片段:         return indexLogic.getTeacherById(user.getName());
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: userName : String
+代码行数: 38
+代码片段:     public List<Teacher> getTeacherById(String userName) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: userName : String
+代码行数: 39
+代码片段:         return indexDb.getTeacherById(userName);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: userName : String
+代码行数: 57
+代码片段:     public List<Teacher> getTeacherById(String userName) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sqlWithInt
+代码行数: 59
+代码片段:         return jdbcTemplate.query(sqlWithInt, ROW_MAPPER_TEACHER);
+
+
+

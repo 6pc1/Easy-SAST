@@ -1,0 +1,78 @@
+漏洞类型:java/vul/sql
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: user_list : List
+代码行数: 36
+代码片段: @RequestBody List<String> user_list)
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sqlWithIn
+代码行: 67
+代码片段:         return jdbcTemplate.query(sqlWithIn, ROW_MAPPER);
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: user_list : List
+代码行数: 36
+代码片段:     public List<Student> in(@RequestBody List<String> user_list) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: user_list : List
+代码行数: 37
+代码片段:         return indexLogic.getStudentWithIn(user_list);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: user_list : List
+代码行数: 30
+代码片段:     public List<Student> getStudentWithIn(List<String> user_list) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: user_list : List
+代码行数: 31
+代码片段:         return indexDb.getStudentWithIn(user_list);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: name_list : List
+代码行数: 62
+代码片段:     public List<Student> getStudentWithIn(List<String> name_list) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: name_list : List
+代码行数: 66
+代码片段:         String sqlWithIn = "select * from students where username in ('"+ Joiner.on("','").join(name_list)+"')";
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: join(...) : String
+代码行数: 66
+代码片段:         String sqlWithIn = "select * from students where username in ('"+ Joiner.on("','").join(name_list)+"')";
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sqlWithIn
+代码行数: 67
+代码片段:         return jdbcTemplate.query(sqlWithIn, ROW_MAPPER);
+
+
+

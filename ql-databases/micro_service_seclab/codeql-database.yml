@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: E:\AST\SAST\EasySAST\example-project\micro_service_seclab
+baselineLinesOfCode: 577
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+creationMetadata:
+  sha: f3195a78b790092c84f63447eb7df76d98d13a81
+  cliVersion: 2.20.1
+  creationTime: 2025-07-26T07:51:14.191270700Z
+finalised: true

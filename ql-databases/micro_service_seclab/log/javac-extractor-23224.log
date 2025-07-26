@@ -1,0 +1,36 @@
+[2025-07-26 15:38:46] [javac-extractor-23224] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\log\ext\javac-1.args
+                                              user.dir=E:\AST\SAST\EasySAST\example-project\micro_service_seclab
+[2025-07-26 15:38:46] [javac-extractor-23224] Compilation name E:/AST/SAST/EasySAST/ql-databases/micro_service_seclab/trap/java/diagnostics/diagnostic.trap.gz
+[2025-07-26 15:38:46] [javac-extractor-23224] [WARN] Appending source destination directory E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target\generated-sources\annotations to sourcepath
+[2025-07-26 15:38:48] [javac-extractor-23224] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-07-26 15:38:48] [javac-extractor-23224] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-07-26 15:38:48] [javac-extractor-23224] Processing file E:\AST\SAST\EasySAST\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\data\Teacher.java
+[2025-07-26 15:38:52] [javac-extractor-23224] Processing JAR file: C:/Program Files/Java/jdk1.8.0_65/jre/lib/rt.jar
+[2025-07-26 15:38:52] [javac-extractor-23224] Processing file E:\AST\SAST\EasySAST\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\data\Person.java
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\String.members\String.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\Object.members\Object.members#52.0-1444120998000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\Cloneable.members\Cloneable.members#52.0-1444121002000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\io\Serializable.members\Serializable.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\SuppressWarnings.members\SuppressWarnings.members#52.0-1444121006000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\Override.members\Override.members#52.0-1444121024000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\annotation\Annotation.members\Annotation.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\Class.members\Class.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\reflect\GenericDeclaration.members\GenericDeclaration.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\reflect\Type.members\Type.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\reflect\AnnotatedElement.members\AnnotatedElement.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\annotation\Retention.members\Retention.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\annotation\RetentionPolicy.members\RetentionPolicy.members#52.0-1444121002000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\annotation\Target.members\Target.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\annotation\ElementType.members\ElementType.members#52.0-1444121002000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\Enum.members\Enum.members#52.0-1444121002000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\Comparable.members\Comparable.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\CloneNotSupportedException.members\CloneNotSupportedException.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] [WARN] Not rewriting trap file for E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\trap\java\classes\java\lang\annotation\Documented.members\Documented.members#52.0-1444121000000-java.trap.gz as it exists
+[2025-07-26 15:38:52] [javac-extractor-23224] Processing JAR file: D:/repository/maven/org/hibernate/hibernate-core/5.4.32.Final/hibernate-core-5.4.32.Final.jar
+[2025-07-26 15:38:52] [javac-extractor-23224] Processing JAR file: D:/repository/maven/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar
+[2025-07-26 15:38:52] [javac-extractor-23224] Javac init time: 1.8s
+[2025-07-26 15:38:52] [javac-extractor-23224] Javac attr time: 0.1s
+[2025-07-26 15:38:52] [javac-extractor-23224] Extractor time: 3.6s
+[2025-07-26 15:38:52] [javac-extractor-23224] Other time: 0.3s
+[2025-07-26 15:38:52] [javac-extractor-23224] Total time: 5.8s

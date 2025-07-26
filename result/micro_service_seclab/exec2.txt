@@ -1,0 +1,57 @@
+漏洞类型:java/vul/execql
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: command : String
+代码行数: 47
+代码片段: @RequestParam(value="command") String command)
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: cmd
+代码行: 53
+代码片段:             Process process = Runtime.getRuntime().exec(cmd);
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: command : String
+代码行数: 47
+代码片段:     public StringBuffer Two(@RequestParam(value="command") String command) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: command : String
+代码行数: 51
+代码片段:             cmd = String.format("%s", command);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: new ..[] { .. } : Object[] [[]] : String
+代码行数: 51
+代码片段:             cmd = String.format("%s", command);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: format(...) : String
+代码行数: 51
+代码片段:             cmd = String.format("%s", command);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: cmd
+代码行数: 53
+代码片段:             Process process = Runtime.getRuntime().exec(cmd);
+
+
+

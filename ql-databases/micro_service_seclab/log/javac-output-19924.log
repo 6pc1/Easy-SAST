@@ -1,0 +1,4 @@
+[2025-07-26 15:51:21] [javac-output-19924] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-07-26 15:51:21] [javac-output-19924] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-07-26 15:51:21] [javac-output-19924] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-07-26 15:51:28] [javac-output-19924] warning: unknown enum constant When.MAYBE

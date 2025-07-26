@@ -1,0 +1,67 @@
+Initializing database at E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab.
+Running build command: [mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml]
+Running command in E:\AST\SAST\EasySAST\example-project\micro_service_seclab: [mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml]
+[2025-07-26 15:51:17] [build-stdout] [INFO] Scanning for projects...
+[2025-07-26 15:51:17] [build-stdout] [INFO] 
+[2025-07-26 15:51:17] [build-stdout] [INFO] -------------------< com.l4yn3:micro-service-seclab >-------------------
+[2025-07-26 15:51:17] [build-stdout] [INFO] Building micro-service-seclab 0.0.1-SNAPSHOT
+[2025-07-26 15:51:17] [build-stdout] [INFO]   from pom.xml
+[2025-07-26 15:51:17] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-07-26 15:51:17] [build-stdout] [INFO] 
+[2025-07-26 15:51:17] [build-stdout] [INFO] --- clean:3.1.0:clean (default-clean) @ micro-service-seclab ---
+[2025-07-26 15:51:18] [build-stdout] [INFO] Deleting E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target
+[2025-07-26 15:51:18] [build-stdout] [INFO] 
+[2025-07-26 15:51:18] [build-stdout] [INFO] --- resources:3.2.0:resources (default-resources) @ micro-service-seclab ---
+[2025-07-26 15:51:18] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-07-26 15:51:18] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[2025-07-26 15:51:18] [build-stdout] [INFO] Copying 1 resource
+[2025-07-26 15:51:18] [build-stdout] [INFO] Copying 3 resources
+[2025-07-26 15:51:18] [build-stdout] [INFO] 
+[2025-07-26 15:51:18] [build-stdout] [INFO] --- compiler:3.8.1:compile (default-compile) @ micro-service-seclab ---
+[2025-07-26 15:51:18] [build-stdout] [INFO] Changes detected - recompiling the module!
+[2025-07-26 15:51:18] [build-stdout] [INFO] Compiling 14 source files to E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target\classes
+[2025-07-26 15:51:34] [build-stdout] [INFO] /E:/AST/SAST/EasySAST/example-project/micro_service_seclab/src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java: E:\AST\SAST\EasySAST\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.javaʹ�û򸲸����ѹ�ʱ�� API��
+[2025-07-26 15:51:34] [build-stdout] [INFO] /E:/AST/SAST/EasySAST/example-project/micro_service_seclab/src/main/java/com/l4yn3/microserviceseclab/controller/SSRFController.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[2025-07-26 15:51:34] [build-stdout] [INFO] /E:/AST/SAST/EasySAST/example-project/micro_service_seclab/src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java: E:\AST\SAST\EasySAST\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+[2025-07-26 15:51:34] [build-stdout] [INFO] /E:/AST/SAST/EasySAST/example-project/micro_service_seclab/src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[2025-07-26 15:51:34] [build-stdout] [INFO] 
+[2025-07-26 15:51:34] [build-stdout] [INFO] --- resources:3.2.0:testResources (default-testResources) @ micro-service-seclab ---
+[2025-07-26 15:51:34] [build-stdout] [INFO] Not copying test resources
+[2025-07-26 15:51:34] [build-stdout] [INFO] 
+[2025-07-26 15:51:34] [build-stdout] [INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ micro-service-seclab ---
+[2025-07-26 15:51:34] [build-stdout] [INFO] Not compiling test sources
+[2025-07-26 15:51:34] [build-stdout] [INFO] 
+[2025-07-26 15:51:34] [build-stdout] [INFO] --- surefire:2.22.2:test (default-test) @ micro-service-seclab ---
+[2025-07-26 15:51:35] [build-stdout] [INFO] Tests are skipped.
+[2025-07-26 15:51:35] [build-stdout] [INFO] 
+[2025-07-26 15:51:35] [build-stdout] [INFO] --- jar:3.2.0:jar (default-jar) @ micro-service-seclab ---
+[2025-07-26 15:51:35] [build-stdout] [INFO] Building jar: E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target\micro-service-seclab-0.0.1-SNAPSHOT.jar
+[2025-07-26 15:51:35] [build-stdout] [INFO] 
+[2025-07-26 15:51:35] [build-stdout] [INFO] --- spring-boot:2.5.3:repackage (repackage) @ micro-service-seclab ---
+[2025-07-26 15:51:36] [build-stdout] [INFO] Replacing main artifact with repackaged archive
+[2025-07-26 15:51:36] [build-stdout] [INFO] 
+[2025-07-26 15:51:36] [build-stdout] [INFO] --- install:2.5.2:install (default-install) @ micro-service-seclab ---
+[2025-07-26 15:51:36] [build-stdout] [INFO] Installing E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target\micro-service-seclab-0.0.1-SNAPSHOT.jar to D:\repository\maven\com\l4yn3\micro-service-seclab\0.0.1-SNAPSHOT\micro-service-seclab-0.0.1-SNAPSHOT.jar
+[2025-07-26 15:51:36] [build-stdout] [INFO] Installing E:\AST\SAST\EasySAST\example-project\micro_service_seclab\pom.xml to D:\repository\maven\com\l4yn3\micro-service-seclab\0.0.1-SNAPSHOT\micro-service-seclab-0.0.1-SNAPSHOT.pom
+[2025-07-26 15:51:36] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-07-26 15:51:36] [build-stdout] [INFO] BUILD SUCCESS
+[2025-07-26 15:51:36] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-07-26 15:51:36] [build-stdout] [INFO] Total time:  19.367 s
+[2025-07-26 15:51:36] [build-stdout] [INFO] Finished at: 2025-07-26T15:51:36+08:00
+[2025-07-26 15:51:36] [build-stdout] [INFO] ------------------------------------------------------------------------
+Finalizing database at E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab.
+Running pre-finalize script E:\AST\SAST\EasySAST\tools\codeql\java\tools\pre-finalize.cmd in E:\AST\SAST\EasySAST\example-project\micro_service_seclab.
+Running command in E:\AST\SAST\EasySAST\example-project\micro_service_seclab: [E:\AST\SAST\EasySAST\tools\codeql\java\tools\pre-finalize.cmd]
+[2025-07-26 15:51:38] [build-stderr] Scanning for files in E:\AST\SAST\EasySAST\example-project\micro_service_seclab...
+[2025-07-26 15:51:38] [build-stderr] E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab: Indexing files in in E:\AST\SAST\EasySAST\example-project\micro_service_seclab...
+[2025-07-26 15:51:38] [build-stderr] Running command in E:\AST\SAST\EasySAST\example-project\micro_service_seclab: [E:\AST\SAST\EasySAST\tools\codeql\xml\tools\index-files.cmd, E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\working\files-to-index14359446618112345492.list]
+[2025-07-26 15:51:39] [build-stderr] Scanning for files in E:\AST\SAST\EasySAST\example-project\micro_service_seclab...
+[2025-07-26 15:51:39] [build-stderr] E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab: Indexing files in in E:\AST\SAST\EasySAST\example-project\micro_service_seclab...
+[2025-07-26 15:51:39] [build-stderr] Running command in E:\AST\SAST\EasySAST\example-project\micro_service_seclab: [E:\AST\SAST\EasySAST\tools\codeql\properties\tools\index-files.cmd, E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab\working\files-to-index10205897731640170007.list]
+Running TRAP import for CodeQL database at E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 2.18 MiB; string pool: 2.78 MiB).
+TRAP import complete (3s).
+Finished zipping source archive (18.55 KiB).
+Successfully created database at E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab.

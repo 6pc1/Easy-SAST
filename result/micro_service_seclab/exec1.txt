@@ -1,0 +1,50 @@
+漏洞类型:java/vul/execql
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: command : String
+代码行数: 24
+代码片段: @RequestParam(value = "command") String command)
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: commands
+代码行: 29
+代码片段:         ProcessBuilder processBuilder = new ProcessBuilder(commands);
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: command : String
+代码行数: 24
+代码片段:     public StringBuffer One(@RequestParam(value = "command") String command) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: command : String
+代码行数: 27
+代码片段:         commands.add(command);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: commands [post update] : ArrayList [<element>] : String
+代码行数: 27
+代码片段:         commands.add(command);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/RceController.java
+传播参数: commands
+代码行数: 29
+代码片段:         ProcessBuilder processBuilder = new ProcessBuilder(commands);
+
+
+

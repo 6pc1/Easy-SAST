@@ -1,0 +1,36 @@
+漏洞类型:java/vul/fastjson
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/FastJsonController.java
+传播参数: applyData : String
+代码行数: 15
+代码片段: @RequestBody String applyData,
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/FastJsonController.java
+传播参数: applyData
+代码行: 17
+代码片段:         Teacher teachVO = JSON.parseObject(applyData, Teacher.class);
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/FastJsonController.java
+传播参数: applyData : String
+代码行数: 15
+代码片段:     public Teacher createActivity(@RequestBody String applyData,
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/FastJsonController.java
+传播参数: applyData
+代码行数: 17
+代码片段:         Teacher teachVO = JSON.parseObject(applyData, Teacher.class);
+
+
+

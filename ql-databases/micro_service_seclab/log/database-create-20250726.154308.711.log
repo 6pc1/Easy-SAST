@@ -1,0 +1,319 @@
+[2025-07-26 15:43:08] This is codeql database create ../ql-databases/micro_service_seclab --language=java --command=mvn clean install -Dmaven.test.skip=true --file pom.xml --source-root ../example-project/micro_service_seclab --overwrite
+[2025-07-26 15:43:08] Log file was started late.
+[2025-07-26 15:43:08] [PROGRESS] database create> Initializing database at E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab.
+[2025-07-26 15:43:08] Running plumbing command: codeql database init --overwrite --language=java --extractor-options-verbosity=1 --qlconfig-file=E:\AST\SAST\EasySAST\tools\qlconfig.yml --source-root=E:\AST\SAST\EasySAST\example-project\micro_service_seclab --allow-missing-source-root=false --allow-already-existing -- E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab
+[2025-07-26 15:43:08] Calling plumbing command: codeql resolve languages --extractor-options-verbosity=1 --format=betterjson
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from E:\AST\SAST\EasySAST\tools\codeql\.codeqlmanifest.json
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\cpp\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\csharp\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\csv\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\go\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\html\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\java\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\javascript\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\properties\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\python\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\ruby\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\swift\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\xml\codeql-extractor.yml.
+[2025-07-26 15:43:09] [DETAILS] resolve languages> Parsing E:\AST\SAST\EasySAST\tools\codeql\yaml\codeql-extractor.yml.
+[2025-07-26 15:43:09] Plumbing command codeql resolve languages completed:
+                      {
+                        "aliases" : {
+                          "c" : "cpp",
+                          "c++" : "cpp",
+                          "c-c++" : "cpp",
+                          "c-cpp" : "cpp",
+                          "c#" : "csharp",
+                          "java-kotlin" : "java",
+                          "kotlin" : "java",
+                          "javascript-typescript" : "javascript",
+                          "typescript" : "javascript"
+                        },
+                        "extractors" : {
+                          "cpp" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\cpp",
+                              "extractor_options" : {
+                                "scale_timeouts" : {
+                                  "title" : "Value to scale compiler introspection timeouts with",
+                                  "description" : "The extractor attempts to determine what compiler the source code being extracted is compiled with. To this end the extractor makes additional calls to the compiler, some of which are expected to return within a certain fixed time (either 10s or 15s). On some systems that are under high load this time might be too short, and can be scaled up using this option.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-9]+"
+                                },
+                                "log_verbosity" : {
+                                  "title" : "Verbosity of the extractor logging",
+                                  "description" : "Set the verbosity of the extractor logging to 'quiet' (0), 'normal' (1), 'chatty' (2), or 'noisy' (3). The default is 'normal'.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-3]"
+                                }
+                              }
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "DEPRECATED - Whether to use buildless (standalone) extraction.",
+                                  "description" : "DEPRECATED: Use `--build-mode none` instead.\nA value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "binlog" : {
+                                  "title" : "Binlog",
+                                  "description" : "[EXPERIMENTAL] The value is a path to the MsBuild binary log file that should be extracted. This option only works when `--build-mode none` is also specified.\n",
+                                  "type" : "array"
+                                }
+                              }
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\csv"
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\go",
+                              "extractor_options" : {
+                                "extract_tests" : {
+                                  "title" : "Whether to include Go test files in the CodeQL database.",
+                                  "description" : "A value indicating whether Go test files should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "extract_vendor_dirs" : {
+                                  "title" : "Whether to include Go vendor directories in the CodeQL database.",
+                                  "description" : "A value indicating whether Go vendor directories should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\html"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                },
+                                "add_prefer_source" : {
+                                  "title" : "Whether to always prefer source files over class files.",
+                                  "description" : "A value indicating whether source files should be preferred over class files. If set to 'true', the extraction adds '-Xprefer:source' to the javac command line. If set to 'false', the extraction uses the default javac behavior ('-Xprefer:newer'). The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction (experimental).",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "file_hashes_out" : {
+                                  "title" : "Path to write a JSON object giving the hashes of input source files",
+                                  "description" : "Path to write a JSON object giving the hashes of input source files\n",
+                                  "type" : "string"
+                                },
+                                "underlying_file_hashes" : {
+                                  "title" : "Path to a file containing a JSON object giving the hashes of input source files",
+                                  "description" : "The path to a file containing a JSON object giving the hashes of input source files. Only files whose hash differs from that given in this object (or which are not included) will be extracted.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\javascript",
+                              "extractor_options" : {
+                                "skip_types" : {
+                                  "title" : "Skip type extraction for TypeScript",
+                                  "description" : "Whether to skip the extraction of types in a TypeScript application",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\properties"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\python",
+                              "extractor_options" : {
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Python extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "python_executable_name" : {
+                                  "title" : "Controls the name of the Python executable used by the Python extractor.",
+                                  "description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 3 to run.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(py|python|python3)$"
+                                }
+                              }
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ],
+                          "swift" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\swift"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\xml"
+                            }
+                          ],
+                          "yaml" : [
+                            {
+                              "extractor_root" : "E:\\AST\\SAST\\EasySAST\\tools\\codeql\\yaml"
+                            }
+                          ]
+                        }
+                      }
+[2025-07-26 15:43:09] [PROGRESS] database init> Calculating baseline information in E:\AST\SAST\EasySAST\example-project\micro_service_seclab
+[2025-07-26 15:43:09] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2025-07-26 15:43:09] [DETAILS] database init> Running command in E:\AST\SAST\EasySAST\example-project\micro_service_seclab: E:\AST\SAST\EasySAST\tools\codeql\tools\win64\scc.exe --by-file --exclude-dir .git,.hg,.svn --format json --no-large --no-min .
+[2025-07-26 15:43:09] [SPAMMY] database init> Found 15 baseline files for java.
+[2025-07-26 15:43:09] [PROGRESS] database init> Calculated baseline information for languages: java (102ms).
+[2025-07-26 15:43:09] [PROGRESS] database init> Resolving extractor java.
+[2025-07-26 15:43:09] [DETAILS] database init> Found candidate extractor root for java: E:\AST\SAST\EasySAST\tools\codeql\java.
+[2025-07-26 15:43:09] [PROGRESS] database init> Successfully loaded extractor Java/Kotlin (java) from E:\AST\SAST\EasySAST\tools\codeql\java.
+[2025-07-26 15:43:09] [PROGRESS] database init> Created skeleton CodeQL database at E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab. This in-progress database is ready to be populated by an extractor.
+[2025-07-26 15:43:09] Plumbing command codeql database init completed.
+[2025-07-26 15:43:09] [PROGRESS] database create> Running build command: [mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml]
+[2025-07-26 15:43:09] Running plumbing command: codeql database trace-command --working-dir=E:\AST\SAST\EasySAST\example-project\micro_service_seclab --index-traceless-dbs --no-db-cluster -- E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab mvn clean install -Dmaven.test.skip=true --file pom.xml
+[2025-07-26 15:43:09] [PROGRESS] database trace-command> Running command in E:\AST\SAST\EasySAST\example-project\micro_service_seclab: [mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml]
+[2025-07-26 15:43:12] [build-stdout] [INFO] Scanning for projects...
+[2025-07-26 15:43:12] [build-stdout] [INFO] 
+[2025-07-26 15:43:12] [build-stdout] [INFO] -------------------< com.l4yn3:micro-service-seclab >-------------------
+[2025-07-26 15:43:12] [build-stdout] [INFO] Building micro-service-seclab 0.0.1-SNAPSHOT
+[2025-07-26 15:43:12] [build-stdout] [INFO]   from pom.xml
+[2025-07-26 15:43:12] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-07-26 15:43:13] [build-stdout] [INFO] 
+[2025-07-26 15:43:13] [build-stdout] [INFO] --- clean:3.1.0:clean (default-clean) @ micro-service-seclab ---
+[2025-07-26 15:43:13] [build-stdout] [INFO] Deleting E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target
+[2025-07-26 15:43:13] [build-stdout] [INFO] 
+[2025-07-26 15:43:13] [build-stdout] [INFO] --- resources:3.2.0:resources (default-resources) @ micro-service-seclab ---
+[2025-07-26 15:43:14] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-07-26 15:43:14] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[2025-07-26 15:43:14] [build-stdout] [INFO] Copying 1 resource
+[2025-07-26 15:43:14] [build-stdout] [INFO] Copying 3 resources
+[2025-07-26 15:43:14] [build-stdout] [INFO] 
+[2025-07-26 15:43:14] [build-stdout] [INFO] --- compiler:3.8.1:compile (default-compile) @ micro-service-seclab ---
+[2025-07-26 15:43:14] [build-stdout] [INFO] Changes detected - recompiling the module!
+[2025-07-26 15:43:14] [build-stdout] [INFO] Compiling 14 source files to E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target\classes
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- resources:3.2.0:testResources (default-testResources) @ micro-service-seclab ---
+[2025-07-26 15:43:21] [build-stdout] [INFO] Not copying test resources
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ micro-service-seclab ---
+[2025-07-26 15:43:21] [build-stdout] [INFO] Not compiling test sources
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- surefire:2.22.2:test (default-test) @ micro-service-seclab ---
+[2025-07-26 15:43:21] [build-stdout] [INFO] Tests are skipped.
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- jar:3.2.0:jar (default-jar) @ micro-service-seclab ---
+[2025-07-26 15:43:21] [build-stdout] [INFO] Building jar: E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target\micro-service-seclab-0.0.1-SNAPSHOT.jar
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- spring-boot:2.5.3:repackage (repackage) @ micro-service-seclab ---
+[2025-07-26 15:43:22] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-07-26 15:43:22] [build-stdout] [INFO] BUILD FAILURE
+[2025-07-26 15:43:22] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-07-26 15:43:22] [build-stdout] [INFO] Total time:  9.701 s
+[2025-07-26 15:43:22] [build-stdout] [INFO] Finished at: 2025-07-26T15:43:22+08:00
+[2025-07-26 15:43:22] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-07-26 15:43:22] [build-stdout] [ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.5.3:repackage (repackage) on project micro-service-seclab: Execution repackage of goal org.springframework.boot:spring-boot-maven-plugin:2.5.3:repackage failed: Unable to find main class -> [Help 1]
+[2025-07-26 15:43:22] [build-stdout] [ERROR] 
+[2025-07-26 15:43:22] [build-stdout] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[2025-07-26 15:43:22] [build-stdout] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[2025-07-26 15:43:22] [build-stdout] [ERROR] 
+[2025-07-26 15:43:22] [build-stdout] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+[2025-07-26 15:43:22] [build-stdout] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[2025-07-26 15:43:22] [ERROR] Spawned process exited abnormally (code 1; tried to run: [E:\AST\SAST\EasySAST\tools\codeql\tools\win64\tracer.exe, E:\AST\SAST\EasySAST\tools\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml])
+[2025-07-26 15:43:22] Exception caught at top level: Exit status 1 from command: [E:\AST\SAST\EasySAST\tools\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml]
+                      com.semmle.cli2.Commandline.executeAndCheckResult(Commandline.java:170)
+                      com.semmle.cli2.Commandline.runWithoutReturn(Commandline.java:123)
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:227)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:126)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:119)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:201)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:185)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)

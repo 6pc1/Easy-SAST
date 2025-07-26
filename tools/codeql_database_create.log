@@ -1,0 +1,51 @@
+Initializing database at E:\AST\SAST\EasySAST\ql-databases\micro_service_seclab.
+Running build command: [mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml]
+Running command in E:\AST\SAST\EasySAST\example-project\micro_service_seclab: [mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml]
+[2025-07-26 15:43:12] [build-stdout] [INFO] Scanning for projects...
+[2025-07-26 15:43:12] [build-stdout] [INFO] 
+[2025-07-26 15:43:12] [build-stdout] [INFO] -------------------< com.l4yn3:micro-service-seclab >-------------------
+[2025-07-26 15:43:12] [build-stdout] [INFO] Building micro-service-seclab 0.0.1-SNAPSHOT
+[2025-07-26 15:43:12] [build-stdout] [INFO]   from pom.xml
+[2025-07-26 15:43:12] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-07-26 15:43:13] [build-stdout] [INFO] 
+[2025-07-26 15:43:13] [build-stdout] [INFO] --- clean:3.1.0:clean (default-clean) @ micro-service-seclab ---
+[2025-07-26 15:43:13] [build-stdout] [INFO] Deleting E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target
+[2025-07-26 15:43:13] [build-stdout] [INFO] 
+[2025-07-26 15:43:13] [build-stdout] [INFO] --- resources:3.2.0:resources (default-resources) @ micro-service-seclab ---
+[2025-07-26 15:43:14] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-07-26 15:43:14] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[2025-07-26 15:43:14] [build-stdout] [INFO] Copying 1 resource
+[2025-07-26 15:43:14] [build-stdout] [INFO] Copying 3 resources
+[2025-07-26 15:43:14] [build-stdout] [INFO] 
+[2025-07-26 15:43:14] [build-stdout] [INFO] --- compiler:3.8.1:compile (default-compile) @ micro-service-seclab ---
+[2025-07-26 15:43:14] [build-stdout] [INFO] Changes detected - recompiling the module!
+[2025-07-26 15:43:14] [build-stdout] [INFO] Compiling 14 source files to E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target\classes
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- resources:3.2.0:testResources (default-testResources) @ micro-service-seclab ---
+[2025-07-26 15:43:21] [build-stdout] [INFO] Not copying test resources
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ micro-service-seclab ---
+[2025-07-26 15:43:21] [build-stdout] [INFO] Not compiling test sources
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- surefire:2.22.2:test (default-test) @ micro-service-seclab ---
+[2025-07-26 15:43:21] [build-stdout] [INFO] Tests are skipped.
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- jar:3.2.0:jar (default-jar) @ micro-service-seclab ---
+[2025-07-26 15:43:21] [build-stdout] [INFO] Building jar: E:\AST\SAST\EasySAST\example-project\micro_service_seclab\target\micro-service-seclab-0.0.1-SNAPSHOT.jar
+[2025-07-26 15:43:21] [build-stdout] [INFO] 
+[2025-07-26 15:43:21] [build-stdout] [INFO] --- spring-boot:2.5.3:repackage (repackage) @ micro-service-seclab ---
+[2025-07-26 15:43:22] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-07-26 15:43:22] [build-stdout] [INFO] BUILD FAILURE
+[2025-07-26 15:43:22] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-07-26 15:43:22] [build-stdout] [INFO] Total time:  9.701 s
+[2025-07-26 15:43:22] [build-stdout] [INFO] Finished at: 2025-07-26T15:43:22+08:00
+[2025-07-26 15:43:22] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-07-26 15:43:22] [build-stdout] [ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.5.3:repackage (repackage) on project micro-service-seclab: Execution repackage of goal org.springframework.boot:spring-boot-maven-plugin:2.5.3:repackage failed: Unable to find main class -> [Help 1]
+[2025-07-26 15:43:22] [build-stdout] [ERROR] 
+[2025-07-26 15:43:22] [build-stdout] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[2025-07-26 15:43:22] [build-stdout] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[2025-07-26 15:43:22] [build-stdout] [ERROR] 
+[2025-07-26 15:43:22] [build-stdout] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+[2025-07-26 15:43:22] [build-stdout] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[2025-07-26 15:43:22] [ERROR] Spawned process exited abnormally (code 1; tried to run: [E:\AST\SAST\EasySAST\tools\codeql\tools\win64\tracer.exe, E:\AST\SAST\EasySAST\tools\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml])
+A fatal error occurred: Exit status 1 from command: [E:\AST\SAST\EasySAST\tools\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, mvn, clean, install, -Dmaven.test.skip=true, --file, pom.xml]

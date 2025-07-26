@@ -1,0 +1,64 @@
+漏洞类型:java/vul/sql
+
+代码起点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: username : String
+代码行数: 30
+代码片段: @RequestParam(value = "username") String username)
+
+
+
+代码终点:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sql
+代码行: 43
+代码片段:         return jdbcTemplate.query(sql, ROW_MAPPER);
+
+
+
+完整链路:
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: username : String
+代码行数: 30
+代码片段:     public List<Student> one(@RequestParam(value = "username") String username) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/controller/IndexController.java
+传播参数: username : String
+代码行数: 31
+代码片段:         return indexLogic.getStudent(username);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: username : String
+代码行数: 18
+代码片段:     public List<Student> getStudent(String username) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/logic/IndexLogic.java
+传播参数: username : String
+代码行数: 19
+代码片段:         return indexDb.getStudent(username);
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: username : String
+代码行数: 39
+代码片段:     public List<Student> getStudent(String username) {
+
+
+
+相关文件: src/main/java/com/l4yn3/microserviceseclab/db/IndexDb.java
+传播参数: sql
+代码行数: 43
+代码片段:         return jdbcTemplate.query(sql, ROW_MAPPER);
+
+
+

@@ -1,0 +1,391 @@
+Running delombok on ../example-project/micro_service_seclab...
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:3: 错误: 程序包com.alibaba.fastjson不存在
+import com.alibaba.fastjson.JSON;
+                           ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:5: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.*;
+^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:7: 错误: 程序包javax.servlet.http不存在
+import javax.servlet.http.HttpServletRequest;
+                         ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:8: 错误: 程序包javax.servlet.http不存在
+import javax.servlet.http.HttpServletResponse;
+                         ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:10: 错误: 找不到符号
+@RestController
+ ^
+  符号: 类 RestController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:11: 错误: 找不到符号
+@RequestMapping(value = "/fastjson")
+ ^
+  符号: 类 RequestMapping
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:16: 错误: 找不到符号
+                                  HttpServletRequest request, HttpServletResponse response){
+                                  ^
+  符号:   类 HttpServletRequest
+  位置: 类 FastJsonController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:16: 错误: 找不到符号
+                                  HttpServletRequest request, HttpServletResponse response){
+                                                              ^
+  符号:   类 HttpServletResponse
+  位置: 类 FastJsonController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:9: 错误: 程序包org.springframework.beans.factory.annotation不存在
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:10: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.*;
+^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:16: 错误: 找不到符号
+@RestController
+ ^
+  符号: 类 RestController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:17: 错误: 找不到符号
+@RequestMapping(value = "/sqlinjection")
+ ^
+  符号: 类 RequestMapping
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\logic\IndexLogic.java:6: 错误: 程序包org.springframework.beans.factory.annotation不存在
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\logic\IndexLogic.java:7: 错误: 程序包org.springframework.stereotype不存在
+import org.springframework.stereotype.Service;
+                                     ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\logic\IndexLogic.java:12: 错误: 找不到符号
+@Service
+ ^
+  符号: 类 Service
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\mapper\IStudentMapper.java:4: 错误: 程序包org.apache.ibatis.annotations不存在
+import org.apache.ibatis.annotations.Mapper;
+                                    ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\mapper\IStudentMapper.java:5: 错误: 程序包org.apache.ibatis.annotations不存在
+import org.apache.ibatis.annotations.Param;
+                                    ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\mapper\IStudentMapper.java:6: 错误: 程序包org.apache.ibatis.annotations不存在
+import org.apache.ibatis.annotations.Select;
+                                    ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\mapper\IStudentMapper.java:7: 错误: 程序包org.springframework.stereotype不存在
+import org.springframework.stereotype.Repository;
+                                     ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\mapper\IStudentMapper.java:11: 错误: 找不到符号
+@Mapper
+ ^
+  符号: 类 Mapper
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\mapper\IStudentMapper.java:12: 错误: 找不到符号
+@Repository
+ ^
+  符号: 类 Repository
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\dao\PersonRepository.java:4: 错误: 程序包org.springframework.data.jpa.repository不存在
+import org.springframework.data.jpa.repository.JpaRepository;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\dao\PersonRepository.java:5: 错误: 程序包org.springframework.data.jpa.repository不存在
+import org.springframework.data.jpa.repository.Query;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\dao\PersonRepository.java:10: 错误: 找不到符号
+public interface PersonRepository extends JpaRepository<Person, String> {
+                                          ^
+  符号: 类 JpaRepository
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\data\Person.java:4: 错误: 程序包org.hibernate.annotations不存在
+import org.hibernate.annotations.GenericGenerator;
+                                ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\data\Person.java:6: 错误: 程序包javax.persistence不存在
+import javax.persistence.*;
+^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\data\Person.java:8: 错误: 找不到符号
+@Entity
+ ^
+  符号: 类 Entity
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\data\Person.java:9: 错误: 找不到符号
+@Table
+ ^
+  符号: 类 Table
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:5: 错误: 程序包org.springframework.beans.factory.annotation不存在
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:6: 错误: 程序包org.springframework.jdbc.core不存在
+import org.springframework.jdbc.core.JdbcTemplate;
+                                    ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:7: 错误: 程序包org.springframework.jdbc.core不存在
+import org.springframework.jdbc.core.RowMapper;
+                                    ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:8: 错误: 程序包org.springframework.stereotype不存在
+import org.springframework.stereotype.Repository;
+                                     ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:9: 错误: 程序包org.springframework.util不存在
+import org.springframework.util.CollectionUtils;
+                               ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:10: 错误: 程序包com.google.common.base不存在
+import com.google.common.base.Joiner;
+                             ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:16: 错误: 找不到符号
+@Repository
+ ^
+  符号: 类 Repository
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:20: 错误: 找不到符号
+    JdbcTemplate jdbcTemplate;
+    ^
+  符号:   类 JdbcTemplate
+  位置: 类 IndexDb
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:22: 错误: 找不到符号
+    private static final RowMapper<Student> ROW_MAPPER = (rs, i) -> {
+                         ^
+  符号:   类 RowMapper
+  位置: 类 IndexDb
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\db\IndexDb.java:31: 错误: 找不到符号
+    private static final RowMapper<Teacher> ROW_MAPPER_TEACHER = (rs, i) -> {
+                         ^
+  符号:   类 RowMapper
+  位置: 类 IndexDb
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\RceController.java:3: 错误: 程序包com.google.common.base不存在
+import com.google.common.base.Joiner;
+                             ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\RceController.java:4: 错误: 程序包com.google.common.base不存在
+import com.google.common.base.Preconditions;
+                             ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\RceController.java:5: 错误: 程序包org.apache.commons.lang3不存在
+import org.apache.commons.lang3.StringUtils;
+                               ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\RceController.java:6: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.RequestMapping;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\RceController.java:7: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.RequestParam;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\RceController.java:8: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.RestController;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\RceController.java:19: 错误: 找不到符号
+@RestController
+ ^
+  符号: 类 RestController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\RceController.java:20: 错误: 找不到符号
+@RequestMapping(value = "/rce")
+ ^
+  符号: 类 RequestMapping
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:3: 错误: 程序包com.squareup.okhttp不存在
+import com.squareup.okhttp.Call;
+                          ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:4: 错误: 程序包com.squareup.okhttp不存在
+import com.squareup.okhttp.OkHttpClient;
+                          ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:5: 错误: 程序包com.squareup.okhttp不存在
+import com.squareup.okhttp.Response;
+                          ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:6: 错误: 程序包org.apache.http不存在
+import org.apache.http.HttpResponse;
+                      ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:7: 错误: 程序包org.apache.http.client.methods不存在
+import org.apache.http.client.methods.HttpGet;
+                                     ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:8: 错误: 程序包org.apache.http.impl.client不存在
+import org.apache.http.impl.client.DefaultHttpClient;
+                                  ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:9: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.RequestMapping;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:10: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.RequestParam;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:11: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.RestController;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:12: 错误: 程序包org.apache.http.client.fluent不存在
+import org.apache.http.client.fluent.Request;
+                                    ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:19: 错误: 找不到符号
+@RestController
+ ^
+  符号: 类 RestController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\SSRFController.java:20: 错误: 找不到符号
+@RequestMapping(value = "/ssrf")
+ ^
+  符号: 类 RequestMapping
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\XXEController.java:3: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.RequestMapping;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\XXEController.java:4: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.RequestParam;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\XXEController.java:5: 错误: 程序包org.springframework.web.bind.annotation不存在
+import org.springframework.web.bind.annotation.RestController;
+                                              ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\XXEController.java:12: 错误: 找不到符号
+@RestController(value = "/xxe")
+ ^
+  符号: 类 RestController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\MicroServiceSeclabApplication.java:3: 错误: 程序包org.springframework.boot不存在
+import org.springframework.boot.SpringApplication;
+                               ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\MicroServiceSeclabApplication.java:4: 错误: 程序包org.springframework.boot.autoconfigure不存在
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+                                             ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\MicroServiceSeclabApplication.java:6: 错误: 找不到符号
+@SpringBootApplication
+ ^
+  符号: 类 SpringBootApplication
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\MyBatsTest.java:4: 错误: 程序包org.apache.ibatis.io不存在
+import org.apache.ibatis.io.Resources;
+                           ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\MyBatsTest.java:5: 错误: 程序包org.apache.ibatis.session不存在
+import org.apache.ibatis.session.SqlSession;
+                                ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\MyBatsTest.java:6: 错误: 程序包org.apache.ibatis.session不存在
+import org.apache.ibatis.session.SqlSessionFactory;
+                                ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\MyBatsTest.java:7: 错误: 程序包org.apache.ibatis.session不存在
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+                                ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\test\java\com\l4yn3\microserviceseclab\MicroServiceSeclabApplicationTests.java:3: 错误: 程序包org.junit.jupiter.api不存在
+import org.junit.jupiter.api.Test;
+                            ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\test\java\com\l4yn3\microserviceseclab\MicroServiceSeclabApplicationTests.java:4: 错误: 程序包org.springframework.boot.test.context不存在
+import org.springframework.boot.test.context.SpringBootTest;
+                                            ^
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\test\java\com\l4yn3\microserviceseclab\MicroServiceSeclabApplicationTests.java:6: 错误: 找不到符号
+@SpringBootTest
+ ^
+  符号: 类 SpringBootTest
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:15: 错误: 找不到符号
+    public Teacher createActivity(@RequestBody String applyData,
+                                   ^
+  符号:   类 RequestBody
+  位置: 类 FastJsonController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\FastJsonController.java:14: 错误: 找不到符号
+    @PostMapping(value = "/create")
+     ^
+  符号:   类 PostMapping
+  位置: 类 FastJsonController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:20: 错误: 找不到符号
+    @Autowired
+     ^
+  符号:   类 Autowired
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:23: 错误: 找不到符号
+    @Autowired
+     ^
+  符号:   类 Autowired
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:26: 错误: 找不到符号
+    @Autowired
+     ^
+  符号:   类 Autowired
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:30: 错误: 找不到符号
+    public List<Student> one(@RequestParam(value = "username") String username) {
+                              ^
+  符号:   类 RequestParam
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:29: 错误: 找不到符号
+    @RequestMapping(value = "/one")
+     ^
+  符号:   类 RequestMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:36: 错误: 找不到符号
+    public List<Student> in(@RequestBody List<String> user_list) {
+                             ^
+  符号:   类 RequestBody
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:35: 错误: 找不到符号
+    @PostMapping(value = "/in")
+     ^
+  符号:   类 PostMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:42: 错误: 找不到符号
+    public List<Student> longin(@RequestBody List<Long> user_list) {
+                                 ^
+  符号:   类 RequestBody
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:41: 错误: 找不到符号
+    @PostMapping(value = "/longin")
+     ^
+  符号:   类 PostMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:47: 错误: 找不到符号
+    public List<Student> objectParam(@RequestBody Student user) {
+                                      ^
+  符号:   类 RequestBody
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:46: 错误: 找不到符号
+    @PostMapping(value = "/object")
+     ^
+  符号:   类 PostMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:53: 错误: 找不到符号
+    public List<Student> objectIntParam(@RequestBody Student user) {
+                                         ^
+  符号:   类 RequestBody
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:52: 错误: 找不到符号
+    @PostMapping(value = "/objectint")
+     ^
+  符号:   类 PostMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:59: 错误: 找不到符号
+    public List<Teacher> objectLomBok(@RequestBody Teacher user) {
+                                       ^
+  符号:   类 RequestBody
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:58: 错误: 找不到符号
+    @PostMapping(value = "/object_lombok")
+     ^
+  符号:   类 PostMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:64: 错误: 找不到符号
+    public List<Student> optionalLike(@RequestParam(value = "username") Optional<String> optinal_username) {
+                                       ^
+  符号:   类 RequestParam
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:63: 错误: 找不到符号
+    @RequestMapping(value = "/optinal_like")
+     ^
+  符号:   类 RequestMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:69: 错误: 找不到符号
+    public List<Student> myBatis(@RequestParam(value = "name") String name) {
+                                  ^
+  符号:   类 RequestParam
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:68: 错误: 找不到符号
+    @RequestMapping(value = "/myBatis")
+     ^
+  符号:   类 RequestMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:74: 错误: 找不到符号
+    public List<Student> myBatisWithAnnotations(@RequestParam(value = "name") String name) {
+                                                 ^
+  符号:   类 RequestParam
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:73: 错误: 找不到符号
+    @RequestMapping(value = "/myBatisWithAnnotations")
+     ^
+  符号:   类 RequestMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:80: 错误: 找不到符号
+    public List<Person> jpaOne(@RequestParam(value = "name") String name) {
+                                ^
+  符号:   类 RequestParam
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:79: 错误: 找不到符号
+    @RequestMapping(value = "/jpaone")
+     ^
+  符号:   类 RequestMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:85: 错误: 找不到符号
+    public List<Person> jpawithAnnotations(@RequestParam(value = "name") String name) {
+                                            ^
+  符号:   类 RequestParam
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\controller\IndexController.java:84: 错误: 找不到符号
+    @RequestMapping(value = "/jpaWithAnnotations")
+     ^
+  符号:   类 RequestMapping
+  位置: 类 IndexController
+E:\AST\SAST\EasySAST\tools\..\example-project\micro_service_seclab\src\main\java\com\l4yn3\microserviceseclab\logic\IndexLogic.java:15: 错误: 找不到符号
+    @Autowired
+     ^
+  符号:   类 Autowired
+  位置: 类 IndexLogic
+Cleaning up generated files...
+Copying files back to source directory...
+delombok\src\main\java\com\l4yn3\microserviceseclab\data\Person.java
+delombok\src\main\java\com\l4yn3\microserviceseclab\data\Teacher.java
+复制了 2 个文件
+Delombok process completed successfully.
