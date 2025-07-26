@@ -31,7 +31,7 @@
 
 如果需要查看对应的效果，直接运行easy_sast.py即可
 
-![image-20250726155219086](C:/Users/ASUS/AppData/Roaming/Typora/typora-user-images/image-20250726155219086.png)
+![image-20250726155219086](https://raw.githubusercontent.com/6pc1/typora/main/img/2025-07-26/39e0e97694c8348ace6c0da3c811fa9b--27fe--image-20250726155219086.png)
 
 然后就可以看到已经在不停的扫描了，且会将结果保存，可以看看结果
 
